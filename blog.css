@@ -1,0 +1,100 @@
+/* General styling for the article */
+article {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8e9e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings styling */
+article h1 {
+    font-size: 28px;
+    color: #003366; 
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 22px;
+    color: #003366;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+article p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styling the figure container */
+figure {
+    margin: 20px 0;
+    text-align: center;
+    max-width: 55%; /* Adjusted for responsiveness */
+}
+
+/* Styling the image */
+figure img {
+    max-width: 75%; 
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the image caption */
+figcaption {
+    display: block;
+    font-size: 14px;
+    color: #666666; 
+    margin-top: 10px;
+}
+
+/* Style for links in the article */
+article a {
+    color: #00CCCC;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Wrapper for text and image content */
+.content-image-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between text and image */
+    margin: 20px 0;
+}
+
+/* Text content styling */
+.text-content {
+    flex: 1; /* Allows the text to take up remaining space */
+}
+
+/* Image content styling */
+.image-content {
+    flex: 0 0 300px; /* Set a fixed width for the image container */
+    max-width: 100%; /* Adjusted for responsiveness */
+}
+
+/* Image styling */
+.image-content img {
+    width: 100%; /* Adjusted for responsiveness */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image caption styling */
+.image-content figcaption {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;
+    text-align: center;
+}
