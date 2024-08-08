@@ -43,7 +43,9 @@ header .logo {
 header .header-items {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Increase gap for better spacing between elements */
+    gap: 1.5rem; 
+    flex: 1 1 auto;
+    justify-content: space-around;
 }
 
 header .header-items input[type="search"] {
