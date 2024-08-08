@@ -9,21 +9,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Header Styles */
 header {
     background-color: #f4f4f4;
-    padding: 1.5rem 2rem; /* Increase padding for more spacing */
+    padding: 1.5rem 2rem; /* Adjust padding for more spacing */
     border-bottom: 1px solid #ddd;
     display: flex;
-    justify-content: space-between; /* Adjusted alignment for a more balanced look */
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -36,16 +28,15 @@ header .logo img {
 }
 
 header .logo {
-    flex: 0 1 auto; /* Allows logo to occupy minimal space */
-    margin-right: auto; /* Pushes other items to the right */
+    flex: 0 1 auto;
+    margin-right: auto;
 }
 
 header .header-items {
     display: flex;
     align-items: center;
-    gap: 1.5rem; 
+    gap: 1.5rem;
     flex: 1 1 auto;
-    justify-content: space-around;
 }
 
 header .header-items input[type="search"] {
@@ -58,19 +49,16 @@ header .header-items .menu-toggle {
     font-size: 1.8rem; 
 }
 
-header .notification {
-    margin-left: 2rem; /* Add margin to separate notification icon */
-}
-
+header .notification, 
 header .dropdown, 
 header .profile {
-    margin-left: 2rem; /* Space between dropdown, profile, and other elements */
+    margin-left: 2rem;
 }
 
 .search-container {
     position: relative;
-    width: 50%; /* Increase width for longer search bar */
-    max-width: 600px; /* Optional: Limit maximum width */
+    width: 50%; 
+    max-width: 600px; 
     margin-left: auto; 
     margin-right: 1rem; 
 }
@@ -82,15 +70,6 @@ header .profile {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     border-right: none;
-    font-size: 0.9rem;
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 30%;
-    height: 10px;
 }
 
 .search-container .search-button {
@@ -116,18 +95,8 @@ header .profile {
 }
 
 .header-items a {
-    margin-left: 1rem; /* Space between icons */
+    margin-left: 1rem; 
 } 
-
-.dropdown-menu, .profile-menu {
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1rem; /* Add space between dropdown button and menu */
-}
-
-.profile-menu a, .dropdown-menu a {
-    padding: 0.5rem 1.2rem; /* More padding for better spacing */
-}
 
 /* Notification Icon Styles */
 .notification {
@@ -193,7 +162,6 @@ header .profile {
     background-color: #f4f4f4;
 }
 
-/* Show profile menu on hover */
 .profile:hover .profile-menu {
     display: block;
 }
@@ -237,14 +205,13 @@ header .profile {
     background-color: #f4f4f4;
 }
 
-/* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
 /* Hamburger Button */
 .menu-toggle {
-    display: none; /* Hidden by default */
+    display: none; 
     background: none;
     border: none;
     color: #007BFF;
@@ -254,11 +221,11 @@ header .profile {
 
 /* Mobile Menu */
 .mobile-menu {
-    display: none; /* Hidden by default */
+    display: none;
     background-color: #333;
     color: #fff;
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 60px; 
     right: 0;
     width: 100%;
     padding: 1rem;
@@ -267,10 +234,6 @@ header .profile {
 .mobile-menu ul {
     list-style: none;
     padding: 0;
-}
-
-.mobile-menu ul li {
-    margin: 0;
 }
 
 .mobile-menu ul li a {
@@ -308,130 +271,8 @@ header .profile {
     }
 
     header .menu-toggle {
-        align-self: flex-end; /* Align hamburger menu to the right */
-    }
-}
-
-
-@media (min-width: 769px) {
-    .mobile-menu {
-        display: none; /* Hide mobile menu on larger screens */
-    }
-}
-
-/* Show mobile menu when toggled */
-.mobile-menu.show {
-    display: block;
-}
-
-/* Navigation Panel */
-.nav-panel {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    animation: slideIn 0.5s ease-out;
-}
-
-.nav-panel ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-panel ul li {
-    margin: 0;
-}
-
-.nav-panel ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-panel ul li a:hover {
-    background-color: #575757;
-    color: #fff;
-}
-
-/* Latest Blogs Section */
-.latest-blogs {
-    padding: 2rem 0;
-}
-
-.latest-blogs h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem; /* Adds space between boxes */
-}
-
-.box2, .box5, .box6, .box1, .box8, .box9 {
-    flex: 1 1 30%; /* Allows boxes to grow and shrink as needed */
-    max-width: 30%;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.box2:hover, .box5:hover, .box6:hover, .box1:hover, .box8:hover, .box9:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.post-item {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensures consistent height */
-}
-
-.box-img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem;
-}
-
-.post-item h3 {
-    margin: 0.5rem 0;
-}
-
-.post-item p {
-    color: #555;
-    flex-grow: 1; /* Allows the paragraph to grow and fill the space */
-}
-
-.post-item a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.post-item a:hover {
-    color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .box2, .box5, .box6, .box1, .box8, .box9 {
-        flex: 1 1 45%;
-        max-width: 45%;
+        display: block;
+        align-self: flex-end;
     }
 }
 
@@ -442,7 +283,6 @@ header .profile {
     }
 }
 
-/* Large Screen Design */
 @media (min-width: 1200px) {
     .box2, .box5, .box6, .box1, .box8, .box9 {
         width: 22%;
