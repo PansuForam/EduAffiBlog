@@ -47,12 +47,12 @@ header .header-items {
 
 header .header-items input[type="search"] {
     padding: 0.7rem;
-    width: 200px; /* Adjust width as needed */
+    width: 500px; 
     border-radius: 20px;
 }
 
 header .header-items .menu-toggle {
-    font-size: 1.8rem; /* Increase icon size for visibility */
+    font-size: 1.8rem; 
 }
 
 header .notification {
