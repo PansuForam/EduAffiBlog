@@ -259,6 +259,10 @@ header .header-items input[type="search"] {
     .menu-toggle {
         display: block; /* Show hamburger button */
     }
+
+    .search-container {
+        width: 70%; /* Adjust width on smaller screens */
+    }
 }
 
 @media (min-width: 769px) {
