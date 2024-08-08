@@ -17,46 +17,86 @@ a:hover {
 }
 
 /* Header */
-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 10px 20px;
-}
-
+/* Header */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-header .logo img {
-    max-width: 150px;
+header .logo {
+    flex: 1; /* Allows logo to take up space and align with other items */
 }
 
 header .header-items {
     display: flex;
     align-items: center;
+    gap: 15px; /* Add space between search bar and menu toggle */
+    flex: 2; /* Allows search bar to be more flexible */
 }
 
-header input[type="search"] {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 15px;
+header .notification, header .dropdown, header .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
 }
 
-header .menu-toggle {
-    background-color: #3498db;
+/* Navigation Panel */
+.nav-panel ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-panel ul li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-panel ul li a {
+    display: flex;
+    align-items: center;
     color: #fff;
-    border: none;
     padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-header .notification {
-    position: relative;
-    margin-right: 15px;
+/* Mobile Menu */
+.mobile-menu {
+    display: none; /* Hidden by default */
+    background-color: #2c3e50;
+    padding: 20px;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .header-items, .header .notification, .header .dropdown, .header .profile {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-panel ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
 }
 
 .notification .notification-count {
