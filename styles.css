@@ -29,28 +29,37 @@ header {
 }
 
 header .logo {
-    flex: 1; /* Ensures logo takes minimal space */
+    flex: 0 1 auto; /* Allows logo to occupy minimal space */
+    margin-right: auto; /* Pushes other items to the right */
 }
 
 header .logo img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-  
 }
 
 header .header-items {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Space between icons */
-    flex: 2; /* Ensures that the search bar and icons are centered */
+    gap: 1.5rem; /* Increase space between icons */
+    flex: 1 1 auto; /* Allows flexible growth */
     justify-content: flex-end; /* Aligns items to the right */
+}
+
+header .header-items a, 
+header .notification,
+header .profile,
+header .dropdown {
+    margin-left: 1.5rem; /* Add space between elements */
 }
 
 .search-container {
     position: relative;
-    width: 40%; /* Adjust width as needed */
-    margin-left: auto; /* Pushes search bar to the right */
+    width: 50%; /* Increase width for longer search bar */
+    max-width: 600px; /* Optional: Limit maximum width */
+    margin-left: auto; 
+    margin-right: 1rem; 
 }
 
 .search-container input[type="search"] {
@@ -61,6 +70,13 @@ header .header-items {
     border-bottom-left-radius: 8px;
     border-right: none;
     font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width of the header */
 }
 
 .search-container .search-button {
@@ -247,16 +263,21 @@ header .header-items {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-items {
-        display: none; /* Hide regular header items */
-    }
-
-    .menu-toggle {
-        display: block; /* Show hamburger button */
+    header {
+        padding: 1rem; /* Adjust padding for smaller screens */
     }
 
     .search-container {
         width: 70%; /* Adjust width on smaller screens */
+        margin-right: 0; /* Remove right margin if needed */
+    }
+
+    .header-items {
+        display: none; /* Hide regular items on mobile */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger button */
     }
 }
 
