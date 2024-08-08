@@ -158,17 +158,31 @@ header .header-items input[type="search"] {
     color: #0056b3;
 }
 
-/* Responsive Design */
+                          /*                     Responsive Design                        */
+
 @media (max-width: 768px) {
-    .box2 {
+    .box {
         flex: 1 1 45%;
         max-width: 45%;
     }
 }
 
 @media (max-width: 480px) {
-    .box2 {
+    .box {
         flex: 1 1 100%;
         max-width: 100%;
     }
 }
+/* Large Screen Design */
+@media (min-width: 1200px) {
+    .box {
+        width: 22%; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .box2 {
+        width: 20%; 
+    }
+}
+
