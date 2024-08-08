@@ -120,6 +120,49 @@ header .header-items input[type="search"] {
     align-items: center;
 }
 
+/* Profile and Dropdown Menu Styles */
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    right: 0;
+    width: 150px;
+    z-index: 1000;
+}
+
+.profile-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show profile menu on hover */
+.profile:hover .profile-menu {
+    display: block;
+}
+
 /* Dropdown Menu Styles */
 .dropdown {
     position: relative;
@@ -161,49 +204,6 @@ header .header-items input[type="search"] {
 
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* User Profile Styles */
-.profile {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.profile-menu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    top: 100%;
-    right: 0;
-    width: 150px;
-    z-index: 1000;
-}
-
-.profile-menu a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: #333;
-}
-
-.profile-menu a:hover {
-    background-color: #f4f4f4;
-}
-
-/* Show profile menu on hover */
-.profile:hover .profile-menu {
     display: block;
 }
 
