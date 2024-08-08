@@ -26,7 +26,7 @@ img {
 /* Responsive Grid */
 @media (max-width: 768px) {
     .box {
-        width: 48%; /* Make boxes stack in two columns */
+        width: 45%; /* Make boxes stack in two columns */
     }
 }
 
@@ -43,7 +43,16 @@ img {
         font-size: 1.5rem; /* Adjust font size on smaller screens */
         padding: 15px 0;
     }
+    
+    .nav-search {
+        flex-direction: column;
+        width: 100%; /* Full width for search */
+    }
 
+    .search-input, .search-icon {
+        width: 100%; /* Full width for input and icon */
+    }
+    
     .nav-links, .nav-panel ul {
         flex-direction: column;
         text-align: center;
