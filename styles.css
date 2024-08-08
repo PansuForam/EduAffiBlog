@@ -56,6 +56,119 @@ header .header-items input[type="search"] {
     color: #0056b3;
 }
 
+/* Notification Icon Styles */
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notification i {
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+.notification-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #FF4C4C;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    right: 0;
+    width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* User Profile Styles */
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    right: 0;
+    width: 150px;
+    z-index: 1000;
+}
+
+.profile-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show profile menu on hover */
+.profile:hover .profile-menu {
+    display: block;
+}
+
 /* Hamburger Button */
 .menu-toggle {
     display: none; /* Hidden by default */
