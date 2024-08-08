@@ -20,12 +20,18 @@ body {
 /* Header Styles */
 header {
     background-color: #f4f4f4;
-    padding: 1rem 2rem; 
+    padding: 1.5rem 2rem; /* Increase padding for more spacing */
     border-bottom: 1px solid #ddd;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Adjusted alignment for a more balanced look */
     align-items: center;
-    flex-wrap: wrap; /* Allows wrapping of elements on smaller screens */
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 60px;
+    width: 60px; /* Increased size for better visibility */
+    margin-right: 2rem; /* Add space between logo and other elements */
 }
 
 header .logo {
@@ -33,25 +39,29 @@ header .logo {
     margin-right: auto; /* Pushes other items to the right */
 }
 
-header .logo img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
 header .header-items {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Increase space between icons */
-    flex: 1 1 auto; /* Allows flexible growth */
-    justify-content: flex-end; /* Aligns items to the right */
+    gap: 2rem; /* Increase gap for better spacing between elements */
 }
 
-header .header-items a, 
-header .notification,
-header .profile,
-header .dropdown {
-    margin-left: 1.5rem; /* Add space between elements */
+header .header-items input[type="search"] {
+    padding: 0.7rem;
+    width: 200px; /* Adjust width as needed */
+    border-radius: 20px;
+}
+
+header .header-items .menu-toggle {
+    font-size: 1.8rem; /* Increase icon size for visibility */
+}
+
+header .notification {
+    margin-left: 2rem; /* Add margin to separate notification icon */
+}
+
+header .dropdown, 
+header .profile {
+    margin-left: 2rem; /* Space between dropdown, profile, and other elements */
 }
 
 .search-container {
@@ -103,6 +113,16 @@ header .dropdown {
 
 .header-items a {
     margin-left: 1rem; /* Space between icons */
+} 
+
+.dropdown-menu, .profile-menu {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem; /* Add space between dropdown button and menu */
+}
+
+.profile-menu a, .dropdown-menu a {
+    padding: 0.5rem 1.2rem; /* More padding for better spacing */
 }
 
 /* Notification Icon Styles */
@@ -264,22 +284,30 @@ header .dropdown {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 1rem; /* Adjust padding for smaller screens */
+        padding: 1rem 1.5rem; 
+        flex-direction: column; 
+        align-items: flex-start;
     }
 
-    .search-container {
-        width: 70%; /* Adjust width on smaller screens */
-        margin-right: 0; /* Remove right margin if needed */
+    header .logo {
+        margin-bottom: 1rem;
     }
 
-    .header-items {
-        display: none; /* Hide regular items on mobile */
+    header .header-items {
+        flex-direction: column; 
+        gap: 1rem; 
+        width: 100%; 
     }
 
-    .menu-toggle {
-        display: block; /* Show hamburger button */
+    header .header-items input[type="search"] {
+        width: 100%; 
+    }
+
+    header .menu-toggle {
+        align-self: flex-end; /* Align hamburger menu to the right */
     }
 }
+
 
 @media (min-width: 769px) {
     .mobile-menu {
