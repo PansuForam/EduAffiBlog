@@ -325,27 +325,29 @@ img {
     font-weight: bold;
     color: #333; 
 }
-
 .latest-posts {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: space-around;
     background-color: #e0e0e0;
-    padding: 50px;
-    flex-wrap: wrap;
+    padding: 20px;
 }
+
 .box {
+    width: 100%;
+    max-width: 300px;
     height: auto; /* Let the height adjust to content */
-    width: 30%;
+    margin: 10px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    align-items: center;
+     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
