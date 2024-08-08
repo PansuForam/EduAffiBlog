@@ -57,19 +57,17 @@ header .profile {
 
 .search-container {
     position: relative;
-    width: 50%; 
-    max-width: 600px; 
-    margin-left: auto; 
-    margin-right: 1rem; 
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .search-container input[type="search"] {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-right: none;
+    border-radius: 8px 0 0 8px; /* Unified radius for search field */
 }
 
 .search-container .search-button {
@@ -79,8 +77,7 @@ header .profile {
     bottom: 0;
     background-color: #007BFF;
     border: 1px solid #007BFF;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 0 8px 8px 0;
     color: #fff;
     padding: 0 0.75rem;
     font-size: 1rem;
@@ -96,7 +93,7 @@ header .profile {
 
 .header-items a {
     margin-left: 1rem; 
-} 
+}
 
 /* Notification Icon Styles */
 .notification {
@@ -211,7 +208,7 @@ header .profile {
 
 /* Hamburger Button */
 .menu-toggle {
-    display: none; 
+    display: none;
     background: none;
     border: none;
     color: #007BFF;
