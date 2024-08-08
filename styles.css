@@ -86,6 +86,7 @@ header .header-items input[type="search"] {
     background-color: #575757;
     color: #fff;
 }
+
 /* Latest Blogs Section */
 .latest-blogs {
     padding: 2rem 0;
@@ -100,12 +101,16 @@ header .header-items input[type="search"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 1rem; /* Adds space between boxes */
 }
 
 .box2 {
-    width: 30%;
+    flex: 1 1 30%; /* Allows boxes to grow and shrink as needed */
+    max-width: 30%;
+    box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .box2:hover {
@@ -119,7 +124,9 @@ header .header-items input[type="search"] {
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures consistent height */
 }
 
 .box-img {
@@ -135,6 +142,7 @@ header .header-items input[type="search"] {
 
 .post-item p {
     color: #555;
+    flex-grow: 1; /* Allows the paragraph to grow and fill the space */
 }
 
 .post-item a {
@@ -153,12 +161,14 @@ header .header-items input[type="search"] {
 /* Responsive Design */
 @media (max-width: 768px) {
     .box2 {
-        width: 45%;
+        flex: 1 1 45%;
+        max-width: 45%;
     }
 }
 
 @media (max-width: 480px) {
     .box2 {
-        width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
