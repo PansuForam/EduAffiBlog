@@ -116,6 +116,11 @@ header .header-items input[type="search"] {
     }
 }
 
+/* Show mobile menu when toggled */
+.mobile-menu.show {
+    display: block;
+}
+
 /* Navigation Panel */
 .nav-panel {
     position: sticky;
