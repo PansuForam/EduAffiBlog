@@ -294,3 +294,63 @@ header .profile {
         width: 20%;
     }
 }
+/* Navigation Panel Styles */
+.nav-panel {
+    background-color: #f4f4f4;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-panel ul li {
+    flex: 1 1 auto;
+}
+
+.nav-panel ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-panel ul li a:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
+
+/* Mobile Styles for Navigation Panel */
+@media (max-width: 768px) {
+    .nav-panel {
+        padding: 1rem;
+    }
+
+    .nav-panel ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-panel ul li {
+        flex: 1 1 auto;
+    }
+
+    .nav-panel ul li a {
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-panel ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
