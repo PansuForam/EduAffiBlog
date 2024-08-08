@@ -33,9 +33,10 @@ header .logo {
 }
 
 header .logo img {
-    height: 50px !important;
-    width: 50px !important;
-    border-radius: 50% !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red; /* Add temporary background color to see if styles are applied */
 }
 
 header .header-items {
