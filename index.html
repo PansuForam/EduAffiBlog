@@ -8,18 +8,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.webp" alt="Logo of EduAffiBlog">
-            </div>
-            <div class="header-items">
-                <input type="search" placeholder="Search...">
-                <a href="#my-blogs">My Blogs</a>
-                <a href="#account">Account</a>
-            </div>
+    
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.webp" alt="Logo of EduAffiBlog">
         </div>
-    </header>
+        <div class="header-items">
+            <input type="search" placeholder="Search...">
+            <a href="#my-blogs">My Blogs</a>
+            <a href="#account">Account</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu">
+    <ul>
+        <li><a href="#my-blogs">My Blogs</a></li>
+        <li><a href="#account">Account</a></li>
+    </ul>
+</nav>
 
     <!-- Navigation Panel -->
    <nav class="nav-panel">
