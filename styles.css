@@ -17,10 +17,10 @@ body {
     align-items: center;
 }
 
-/* Header */
+/* Header Styles */
 header {
     background-color: #f4f4f4;
-    padding: 1rem;
+    padding: 1rem 2rem; /* Add more horizontal padding */
     border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
@@ -28,40 +28,26 @@ header {
     flex-wrap: wrap; /* Allows wrapping of elements on smaller screens */
 }
 
+header .logo {
+    flex: 1; /* Ensures logo takes minimal space */
+}
+
 header .logo img {
     height: 50px;
-    width: 50px;
-    border-radius: 50%;
 }
 
 header .header-items {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Adds space between items */
+    gap: 1rem; /* Space between icons */
+    flex: 2; /* Ensures that the search bar and icons are centered */
+    justify-content: flex-end; /* Aligns items to the right */
 }
 
-header .header-items input[type="search"] {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-.header-items a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.header-items a:hover {
-    color: #0056b3;
-}
-
-/* Search Container */
 .search-container {
     position: relative;
-    width: 40%;
+    width: 40%; /* Adjust width as needed */
+    margin-left: auto; /* Pushes search bar to the right */
 }
 
 .search-container input[type="search"] {
@@ -94,6 +80,10 @@ header .header-items input[type="search"] {
 
 .search-container .search-button i {
     font-size: 1.2rem;
+}
+
+.header-items a {
+    margin-left: 1rem; /* Space between icons */
 }
 
 /* Notification Icon Styles */
