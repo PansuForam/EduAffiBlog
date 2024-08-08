@@ -56,6 +56,44 @@ header .header-items input[type="search"] {
     color: #0056b3;
 }
 
+/* Search Container */
+.search-container {
+    position: relative;
+    width: 40%;
+}
+
+.search-container input[type="search"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none;
+    font-size: 0.9rem;
+}
+
+.search-container .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #fff;
+    padding: 0 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container .search-button i {
+    font-size: 1.2rem;
+}
+
 /* Notification Icon Styles */
 .notification {
     position: relative;
