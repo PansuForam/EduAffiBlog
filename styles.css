@@ -30,6 +30,8 @@ header {
 
 header .logo img {
     height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
 header .header-items {
