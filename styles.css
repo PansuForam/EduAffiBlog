@@ -44,9 +44,6 @@ header .header-items {
     display: flex;
     align-items: center;
     gap: 1.5rem; 
-    padding-right: 200px;
-    width: 50%;
-    height: 10px;
     flex: 1 1 auto;
     justify-content: space-around;
 }
@@ -90,9 +87,10 @@ header .profile {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%; /* Full width of the header */
+    width: 30%;
+    height: 10px;
 }
 
 .search-container .search-button {
