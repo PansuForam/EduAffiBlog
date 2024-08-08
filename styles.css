@@ -29,9 +29,10 @@ header {
 }
 
 header .logo img {
-    height: 60px;
-    width: 60px; /* Increased size for better visibility */
-    margin-right: 2rem; /* Add space between logo and other elements */
+    height: 80px;
+    width: 80px; 
+    border-radius: 50%;
+    margin-right: 2rem; 
 }
 
 header .logo {
