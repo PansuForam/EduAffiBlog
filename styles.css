@@ -128,6 +128,7 @@ header {
 }
 
 .searchbar button {
+    font-size: 10px;
     background: #2980b9;
     border: none;
     padding: 8px;
