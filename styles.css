@@ -56,11 +56,11 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-    position: relative; /* Make sure the close button is positioned relative to the nav-panel */
+    position: relative; /* Ensure proper positioning of the close button */
 }
 
 .close-button {
-    display: none; /* Initially hide the close button */
+    display: none; /* Hide close button initially */
     background: none;
     border: none;
     color: #fff;
@@ -81,10 +81,11 @@ header {
         right: 0;
         width: 100%;
         border-top: 1px solid #2c3e50;
+        z-index: 1001; /* Ensure nav panel is above other elements */
     }
 
     .close-button {
-        display: block; /* Show the close button when the menu is active */
+        display: block; /* Show close button when nav panel is active */
     }
 }
 
@@ -368,7 +369,7 @@ footer {
 
 @media (max-width: 768px) {
     .nav-panel {
-        display: none;
+        display: none; /* Hide nav panel initially on small screens */
     }
 
     .menu-button {
@@ -377,37 +378,5 @@ footer {
 
     .nav-panel.active {
         display: flex;
-        flex-direction: column;
-        background-color: #34495e;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        border-top: 1px solid #2c3e50;
-    }
-
-    .nav-panel ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav-panel ul li {
-        text-align: center;
-    }
-
-    .searchbar {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .blog-posts {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .post {
-        width: 100%;
-        max-width: none;
     }
 }
