@@ -20,7 +20,7 @@ body {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between; /* Adjusted for alignment */
+    justify-content: space-evenly;
     align-items: center;
     background-color: #2c3e50;
     padding: 0 20px;
@@ -33,9 +33,9 @@ header {
 
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .logo-container {
@@ -62,9 +62,10 @@ header {
     background-color: #34495e;
     border-radius: 5px;
     padding: 5px;
+    margin-left: 20px;
     flex: 1;
     max-width: 600px;
-    margin: 0 20px; /* Adjusted margins for better alignment */
+    margin-right: 20px;
 }
 
 .searchbar input[type="text"] {
@@ -89,17 +90,17 @@ header {
 
 /* Menu Button for Small Screens */
 .menu-button {
-    display: none; /* Hidden by default; shown on small screens */
+    display: none;
     font-size: 24px;
     color: white;
 }
 
-/* Notification, Bookmark, User Icons */
+/*Notification, BookMark, User*/
 .nav-icons {
     display: flex;
     color: white;
     align-items: center;
-    justify-content: space-evenly; /* Adjusted for spacing */
+    justify-content: space-evenly;
     gap: 25px;
 }
 
@@ -123,12 +124,11 @@ header {
     display: none; /* Hidden by default */
     position: absolute;
     top: 80px;
-    right: 20px; /* Adjusted for alignment within header */
+    right: 0;
     width: 200px;
     padding: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    background-color: white; /* Ensuring visibility */
 }
 
 .menu-close {
@@ -145,36 +145,25 @@ header {
     gap: 10px;
 }
 
-/* Media Queries for Responsive Design */
-@media screen and (max-width: 1024px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo-text {
-        font-size: 1.6rem;
-    }
-
-    .searchbar {
-        margin: 10px 0; /* Adjusted margin for small screens */
-        width: 100%;
-    }
-}
-
+/* Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
     .nav-icons {
-        display: none; /* Hide icons on small screens */
+        display: none; 
     }
 
     .menu-button {
-        display: block; /* Show menu button on small screens */
+        display: block;
     }
+}
 
+/* Media Query for Larger Screens */
+@media screen and (min-width: 769px) {
     .dropdown-menu {
-        top: 80px; /* Ensure dropdown is visible */
-        right: 0;
+        display: none; 
     }
+}
+.dropdown-menu{
+    background-color: white;
 }
 
 
