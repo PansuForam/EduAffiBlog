@@ -19,20 +19,30 @@
                 <input type="text" placeholder="Search...">
                 <button><i class="fas fa-search"></i></button>
             </div>
-
-            <button class="menu-button"><i class="fas fa-bars"></i></button>
-
-            <nav class="nav-panel">
-                <button class="close-button"><i class="fas fa-times"></i></button>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
             
+            <!-- Menu Button for Small Screens -->
+            <div class="menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Notification, Bookmark, and User Icons -->
+            <div class="nav-icons">
+                <div class="nav-notification">
+                    <abbr title="Notifications"><i class="fa-solid fa-bell"></i></abbr>
+                </div>      
+
+                <div class="nav-bookmark">
+                    <abbr title="Bookmarks"><i class="fa-solid fa-bookmark"></i></abbr>
+                </div>
+
+                <div class="nav-write">
+                    <abbr title="Write for us"><i class="fa-solid fa-feather"></i></abbr>
+                </div>
+
+                <div class="nav-user">
+                    <abbr title="User"><i class="fa-solid fa-user"></i></abbr>
+                </div>
+            </div>            
         </div>
     </header>
 
@@ -135,12 +145,18 @@
         
     </footer>
 
+    
     <script>
         const menuButton = document.querySelector('.menu-button');
-        const navPanel = document.querySelector('.nav-panel');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const menuClose = document.querySelector('.menu-close');
 
         menuButton.addEventListener('click', () => {
-            navPanel.classList.toggle('active');
+            dropdownMenu.style.display = 'block';
+        });
+
+        menuClose.addEventListener('click', () => {
+            dropdownMenu.style.display = 'none';
         });
     </script>
 </body>
