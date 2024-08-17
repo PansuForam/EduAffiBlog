@@ -56,81 +56,7 @@ header {
     color: #fff;
 }
 
-/* Menu Button for Small Screens */
-.menu-button {
-    display: none;
-    font-size: 24px;
-}
-
-/*Notification, BookMark, User*/
-.nav-icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 25px;
-}
-
-.nav-notification, .nav-bookmark, .nav-write, .nav-user {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%;
-    border: 2px solid #FFFFFF;
-}
-
-.nav-notification, .nav-bookmark, .nav-write, .nav-user abbr:hover {
-    cursor: pointer;
-}
-
-.nav-notification, .nav-bookmark, .nav-write, .nav-user i {
-    font-size: 20px; /* Adjust icon size */
-}
-
-/* Dropdown Menu for Small Screens */
-.dropdown-menu {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    padding: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.menu-close {
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.dropdown-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Media Query for Smaller Screens */
-@media screen and (max-width: 768px) {
-    .nav-icons {
-        display: none; 
-    }
-
-    .menu-button {
-        display: block;
-    }
-}
-
-/* Media Query for Larger Screens */
-@media screen and (min-width: 769px) {
-    .dropdown-menu {
-        display: none; 
-    }
-}
-.dropdown-menu{
-    background-color: white;
-}
+/*Searchbat*/
 
 .searchbar {
     display: flex;
@@ -161,6 +87,36 @@ header {
     cursor: pointer;
     margin-left: 5px;
 }
+
+/* Menu Button for Small Screens */
+.menu-button {
+    display: none;
+    font-size: 24px;
+}
+
+
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .nav-icons {
+        display: none; 
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 769px) {
+    .dropdown-menu {
+        display: none; 
+    }
+}
+.dropdown-menu{
+    background-color: white;
+}
+
 
 /* Hero Section */
 .hero {
