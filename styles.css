@@ -209,12 +209,10 @@ header {
     margin: 0;
     animation: scroll-left-large 20s linear infinite;
 }
-
 .panel-options li {
     display: inline-block;
     white-space: nowrap;
 }
-
 .panel-options a {
     color: white;
     text-decoration: none;
@@ -226,9 +224,8 @@ header {
 .panel-options a:hover {
     background-color: #4d4dff;
 }
-
-/* Scrolling animation */
-@keyframes scroll-left {
+/* Scrolling animation for large screens */
+@keyframes scroll-left-large {
     0% {
         transform: translateX(100%);
     }
@@ -237,16 +234,25 @@ header {
     }
 }
 
+/* Scrolling animation for small screens */
+@keyframes scroll-left-small {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 /* Adjustments for Small Screens */
 @media (max-width: 768px) {
     .panel-options {
         justify-content: flex-start; 
-        animation: scroll-left 14s linear infinite; /* Adjust speed for small screens */
+        animation: scroll-left-small 14s linear infinite; 
         padding-left: 10px;
     }
 
     .panel-options li {
-        flex-shrink: 0; /* Prevent shrinking */
+        flex-shrink: 0; 
     }
 
     .panel-options a {
@@ -254,7 +260,6 @@ header {
         font-size: 0.9rem;
     }
 }
-
 
 /*Hero*/
 .hero-section {
