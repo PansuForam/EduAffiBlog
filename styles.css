@@ -99,6 +99,16 @@ header {
     cursor: pointer;
 }
 
+/* Button Hover State */
+.search-bar button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button Active State */
+.search-bar button:active {
+    background-color: #004080; /* Even darker blue when clicked */
+}
+
 /* Menu Button for Small Screens */
 .menu-button {
     display: none;
