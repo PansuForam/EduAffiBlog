@@ -210,6 +210,26 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+     .sticky-panel {
+        top: 0; 
+    }
+      .panel-options {
+        justify-content: flex-start; 
+        animation: scroll-left-small 14s linear infinite; 
+        padding-left: 10px;
+    }
+
+    .panel-options li {
+        flex-shrink: 0; 
+    }
+
+    .panel-options a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     background-image: url('hero.jpg');
