@@ -188,30 +188,29 @@ header {
 }
 
 /* Sticky Panel */
+/* Sticky Panel */
 .sticky-panel {
     background-color: rgb(2, 0, 110);
     color: white;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
     border-bottom: 2px solid white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 900;
     padding: 10px 0;
-    overflow: hidden; /* Ensure no overflow issues */
-    width: 100%; 
+    overflow: hidden;
 }
 
 /* Panel Options */
 .panel-options {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: nowrap;
-    gap: 15px;
+    gap: 15px; /* Consistent spacing between items */
     padding: 0;
     margin: 0;
-    animation: scroll-left 20s linear infinite; /* Seamless scrolling */
+    animation: scroll-left 20s linear infinite; /* Adjust the duration as needed */
     white-space: nowrap;
 }
 
@@ -244,13 +243,9 @@ header {
 
 /* Adjustments for Small Screens */
 @media (max-width: 768px) {
-    .sticky-panel {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-
     .panel-options {
-        justify-content: flex-start;
-        animation: scroll-left 14s linear infinite; /* Adjust speed if needed */
+        justify-content: flex-start; 
+        animation: scroll-left 14s linear infinite; /* Adjust speed for small screens */
         padding-left: 10px;
     }
 
@@ -263,6 +258,7 @@ header {
         font-size: 0.9rem;
     }
 }
+
 
 /*Hero*/
 .hero-section {
