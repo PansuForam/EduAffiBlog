@@ -33,6 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .logo-container {
@@ -56,7 +57,7 @@ header {
 .searchbar {
     display: flex;
     align-items: center;
-    background-color: #1abc9c; /* Lighter, contrasting color */
+    background-color: #1abc9c; 
     border-radius: 5px;
     padding: 5px;
     margin-left: 20px;
@@ -70,13 +71,13 @@ header {
     padding: 8px;
     border-radius: 5px;
     outline: none;
-    color: #000; /* Dark text for contrast */
-    background-color: #ecf0f1; /* Lighter background for readability */
+    color: #000; 
+    background-color: #ecf0f1; 
     width: 100%;
 }
 
 .searchbar button {
-    background: #3498db; /* Brighter blue */
+    background: #3498db; 
     border: none;
     padding: 8px;
     border-radius: 5px;
