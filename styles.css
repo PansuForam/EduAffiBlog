@@ -186,6 +186,7 @@ header {
 .dropdown-menu{
     background-color: white;
 }
+
 /* Sticky Panel */
 .sticky-panel {
     background-color: rgb(2, 0, 110);
@@ -211,6 +212,7 @@ header {
     margin: 0;
     animation: scroll-left-large 20s linear infinite;
 }
+
 .panel-options li {
     display: inline-block;
     white-space: nowrap;
