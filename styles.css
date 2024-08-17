@@ -181,13 +181,9 @@ header {
 @media screen and (min-width: 769px) {
     .dropdown-menu {
         display: none; 
+        background-color: white;
     }
-}
-.dropdown-menu{
-    background-color: white;
-}
 
-/* Sticky Panel */
 /* Sticky Panel */
 .sticky-panel {
     background-color: rgb(2, 0, 110);
@@ -206,12 +202,12 @@ header {
 .panel-options {
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
-    gap: 15px; /* Consistent spacing between items */
+    gap: 15px;
     padding: 0;
     margin: 0;
-    animation: scroll-left 20s linear infinite; /* Adjust the duration as needed */
-    white-space: nowrap;
+    animation: scroll-left-large 20s linear infinite;
 }
 
 .panel-options li {
