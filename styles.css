@@ -144,6 +144,22 @@ header {
     font-size: 20px;
 }
 
+/* Menu Button */
+.menu-button {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Show the menu button on small screens */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+}
+
 /* Dropdown Menu for Small Screens */
 .dropdown-menu {
     display: none;
@@ -196,6 +212,14 @@ header {
 .dropdown-content a:hover {
     background-color: #f0f0f0;
     color: #007bff;
+}
+
+/* Dropdown Menu Visibility */
+.menu-button.show {
+    display: block;
+}
+.menu-button.hide {
+    display: none;
 }
 
 /* Sticky Panel */
