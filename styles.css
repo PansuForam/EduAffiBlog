@@ -153,6 +153,13 @@ header {
     transition: color 0.3s ease;
 }
 
+/* Hide the menu button on large screens */
+@media screen and (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+}
+
 /* Show the menu button on small screens */
 @media screen and (max-width: 768px) {
     .menu-button {
@@ -199,6 +206,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: black;
 }
 
 .dropdown-content a {
@@ -217,9 +225,6 @@ header {
 /* Dropdown Menu Visibility */
 .menu-button.show {
     display: block;
-}
-.menu-button.hide {
-    display: none;
 }
 
 /* Sticky Panel */
