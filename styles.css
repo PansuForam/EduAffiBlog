@@ -80,12 +80,12 @@ header {
 }
 
 /* Placeholder Text */
-.search-bar input[type="text"]::placeholder {
+.searchbar input[type="text"]::placeholder {
     color: #a0a0a0;
 }
 
 /* Focus State */
-.search-bar input[type="text"]:focus {
+.searchbar input[type="text"]:focus {
     border: 1px solid #007bff;
     outline: none; 
 }
