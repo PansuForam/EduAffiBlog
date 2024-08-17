@@ -236,6 +236,9 @@ header {
 
 /* Adjustments for Small Screens */
 @media (max-width: 768px) {
+     .sticky-panel {
+        top: 0; 
+    }
       .panel-options {
         justify-content: flex-start; 
         animation: scroll-left-small 14s linear infinite; 
