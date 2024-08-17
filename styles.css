@@ -164,6 +164,83 @@ header {
     background-color: white;
 }
 
+/* Sticky Panel */
+.sticky-panel {
+    background-color: rgb(2, 0, 110);
+    color: white;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 900;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+/* Panel Options */
+.panel-options {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    animation: scroll-left-large 20s linear infinite;
+}
+.panel-options li {
+    display: inline-block;
+    white-space: nowrap;
+}
+.panel-options a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.panel-options a:hover {
+    background-color: #4d4dff;
+}
+/* Scrolling animation for large screens */
+@keyframes scroll-left-large {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Scrolling animation for small screens */
+@keyframes scroll-left-small {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .panel-options {
+        justify-content: flex-start; 
+        animation: scroll-left-small 14s linear infinite; 
+        padding-left: 10px;
+    }
+
+    .panel-options li {
+        flex-shrink: 0; 
+    }
+
+    .panel-options a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Hero Section */
 .hero {
