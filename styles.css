@@ -72,21 +72,31 @@ header {
 .searchbar input[type="text"] {
     border: none;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 4px;
     outline: none;
     background-color: #ffffff; 
     color: #333333;
     width: 100%;
 }
 
+/* Placeholder Text */
+.search-bar input[type="text"]::placeholder {
+    color: #a0a0a0;
+}
+
+/* Focus State */
+.search-bar input[type="text"]:focus {
+    border: 1px solid #007bff;
+    outline: none; 
+}
+
 .searchbar button {
-    background: #2980b9;
+    background-color: #007bff; 
+    color: #ffffff;
     border: none;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-left: 5px;
 }
 
 /* Menu Button for Small Screens */
