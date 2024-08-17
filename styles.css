@@ -59,7 +59,8 @@ header {
 .searchbar {
     display: flex;
     align-items: center;
-    background-color: #658eb8;
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 5px;
     margin-left: 20px;
