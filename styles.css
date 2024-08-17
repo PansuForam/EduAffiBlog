@@ -191,14 +191,15 @@ header {
 .sticky-panel {
     background-color: rgb(2, 0, 110);
     color: white;
-    position: -webkit-sticky; 
+    position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     border-bottom: 2px solid white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 900;
     padding: 10px 0;
-    overflow: hidden;
+    overflow: hidden; /* Ensure no overflow issues */
+    width: 100%; 
 }
 
 /* Panel Options */
@@ -218,6 +219,7 @@ header {
     display: inline-block;
     white-space: nowrap;
 }
+
 .panel-options a {
     color: white;
     text-decoration: none;
@@ -229,8 +231,9 @@ header {
 .panel-options a:hover {
     background-color: #4d4dff;
 }
-/* Scrolling animation for large screens */
-@keyframes scroll-left-large {
+
+/* Scrolling animation */
+@keyframes scroll-left {
     0% {
         transform: translateX(100%);
     }
@@ -239,25 +242,20 @@ header {
     }
 }
 
-/* Scrolling animation for small screens */
-@keyframes scroll-left-small {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 /* Adjustments for Small Screens */
 @media (max-width: 768px) {
+    .sticky-panel {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
     .panel-options {
-        justify-content: flex-start; 
-        animation: scroll-left-small 14s linear infinite; 
+        justify-content: flex-start;
+        animation: scroll-left 14s linear infinite; /* Adjust speed if needed */
         padding-left: 10px;
     }
 
     .panel-options li {
-        flex-shrink: 0; 
+        flex-shrink: 0; /* Prevent shrinking */
     }
 
     .panel-options a {
