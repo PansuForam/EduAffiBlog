@@ -322,28 +322,6 @@ header {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
-
-    .blogs-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .blog-post {
-        width: 90%;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
-    .cta-button {
-        padding: 12px 25px;
-        font-size: 1rem;
-    }
 }
 
 @media screen and (min-width: 769px) {
@@ -393,6 +371,7 @@ header {
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    color: white;
 }
 
 .cta-button {
