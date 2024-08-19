@@ -523,54 +523,63 @@ header {
 
 /* FAQ Section */
 .faq {
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     padding: 2rem 1rem;
     text-align: center;
 }
 
 .faq h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #00274d;
+    margin-bottom: 2rem;
 }
 
 .faq-item {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
 }
 
 details {
     cursor: pointer;
-    padding: 1rem;
-    border: 1px solid #dddddd;
+    padding: 1.2rem;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    background-color: #fafafa;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+details[open] {
+    background-color: #e0e0e0;
+    border-color: #bbb;
 }
 
 summary {
-    font-size: 1.2rem;
-    color: #003366;
+    font-size: 1.3rem;
+    color: #00274d;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    position: relative;
 }
 
 summary::marker {
-    color: #003366;
+    color: #00274d;
 }
 
 summary:hover {
-    color: #0056b3;
+    color: #004080;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
     margin-top: 0.5rem;
+    line-height: 1.6;
 }
 
 
