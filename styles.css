@@ -172,14 +172,16 @@ header {
     display: none;
     position: absolute;
     top: 80px;
-    right: 20px; 
-    left: 150px;
+    right: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     padding: 20px;
+    width: 250px; /* Set a fixed width to ensure it doesn't take up the full screen */
     transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Initial opacity set to 0 for hiding */
+    transform: translateY(-10px); /* Initial transform for hiding */
 }
 
 .dropdown-menu.show {
