@@ -481,6 +481,47 @@ header {
     border-color: #e65550;
 }
 
+/* Testimonials Section */
+.testimonials {
+    background-color: #f0f4f8; /* Light background for a clean look */
+    padding: 2rem 1rem; /* Vertical padding and horizontal spacing */
+    text-align: center; /* Center-align text */
+}
+
+.testimonials h2 {
+    font-size: 2rem; /* Font size for the heading */
+    color: #003366; /* Dark blue color for the heading */
+    margin-bottom: 1.5rem; /* Space below the heading */
+}
+
+.testimonial-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 1.5rem; /* Space between testimonials */
+    max-width: 800px; /* Max width for readability */
+    margin: 0 auto; /* Center the container */
+}
+
+.testimonial {
+    background-color: #ffffff; /* White background for testimonials */
+    border: 1px solid #dddddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Padding inside the testimonial */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.testimonial p {
+    font-size: 1rem; /* Font size for testimonial text */
+    color: #333; /* Dark text color for readability */
+    margin-bottom: 0.5rem; /* Space below the text */
+}
+
+.testimonial cite {
+    font-size: 0.875rem; /* Slightly smaller font size for the citation */
+    color: #666; /* Lighter color for the citation */
+}
+
+
 /* Subscribe to Our Newsletter Section */
 .subscribe-newsletter {
     background-color: #ffffff; 
