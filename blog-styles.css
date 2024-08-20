@@ -36,17 +36,26 @@ article {
     flex: 1;
 }
 
+/* Image Styles */
 figure {
     margin: 0;
     margin-left: 20px;
+    flex: 1;
 }
 
-img {
-    max-width: 100%;
+figure img {
+    width: 100%;
     height: auto;
+    max-width: 400px; /* Adjust as needed */
     border-radius: 4px;
 }
 
+/* To handle 1:1 ratio images */
+figure img {
+    object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
+}
+
+/* Captions */
 figcaption {
     font-size: 0.9em;
     color: #666;
