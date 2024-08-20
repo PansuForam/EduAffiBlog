@@ -1,4 +1,4 @@
-/* Global Styles */
+* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -371,6 +371,22 @@ header {
 .hero-content p {
     font-size: 1.25rem;
     line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #FF6F61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.cta-button:hover {
+    background-color: #e65550; /* Darker Coral on Hover */
 }
 
 /* Latest Blogs Section */
