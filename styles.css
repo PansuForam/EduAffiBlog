@@ -473,41 +473,45 @@ header {
 
 /* General styling for the testimonials section */
 .testimonials {
-    max-width: 1200px; /* Increased max-width to accommodate more testimonials */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 .testimonials h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #333;
     text-align: center;
 }
 
-/* Container for the testimonials */
-.testimonial-container {
+/* Slider container */
+.testimonial-slider {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Individual testimonial styling */
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 .testimonial {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin-right: 20px;
+    flex: 0 0 auto; /* Ensures items don’t shrink or grow */
+    width: calc(100% / 3 - 20px); /* Adjust based on number of items per view */
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial blockquote {
@@ -522,25 +526,42 @@ header {
     color: #888;
 }
 
-/* Responsive design adjustments */
-@media (min-width: 600px) {
-    .testimonial-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .testimonial {
-        flex: 1 1 calc(33.333% - 20px);
-    }
+/* Slider buttons */
+.slider-button {
+    background-color: #4db6ac;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background-color 0.3s ease;
 }
 
+.slider-button:hover {
+    background-color: #00796b;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
     .testimonial {
-        margin: 0 auto;
-        max-width: 100%;
+        width: calc(100% - 20px);
+        margin: 10px auto;
     }
 }
+
 
 /**FAQs section**/
 .faq {
