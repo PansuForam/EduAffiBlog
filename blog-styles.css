@@ -44,7 +44,7 @@ figure {
 }
 
 figure img {
-    width: 100%;
+    width: 50%;
     height: auto;
     max-width: 300px; /* Adjusted max-width for smaller images */
     border-radius: 4px;
