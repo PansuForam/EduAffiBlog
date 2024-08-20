@@ -501,6 +501,7 @@ header {
 .testimonial-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    will-change: transform;
 }
 
 .testimonial {
@@ -510,20 +511,8 @@ header {
     padding: 20px;
     margin-right: 20px;
     flex: 0 0 auto; /* Ensures items don’t shrink or grow */
-    width: calc(100% / 3 - 20px); /* Adjust based on number of items per view */
+    width: 300px; /* Adjust based on desired width */
     text-align: center;
-}
-
-.testimonial blockquote {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #555;
-    margin: 0 0 10px;
-}
-
-.testimonial figcaption {
-    font-size: 1rem;
-    color: #888;
 }
 
 /* Slider buttons */
@@ -557,8 +546,8 @@ header {
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .testimonial {
-        width: calc(100% - 20px);
-        margin: 10px auto;
+        width: 80%; /* Adjust for smaller screens */
+        margin: 0 auto 20px; /* Center and add margin */
     }
 }
 
