@@ -551,8 +551,7 @@ header {
     }
 }
 
-
-/**FAQs section**/
+/** FAQs section **/
 .faq {
     max-width: 800px;
     margin: 0 auto;
@@ -598,6 +597,7 @@ header {
     border-radius: 6px;
     outline: none;
     transition: background-color 0.3s ease;
+    position: relative; /* For positioning the triangle */
 }
 
 .faq-item summary:hover {
@@ -615,15 +615,17 @@ header {
     display: none;
 }
 
+/* Triangle indicator styling */
 .faq-item summary::before {
-    content: '▶';
+    content: '▶'; /* Unicode character for a triangle */
     display: inline-block;
     margin-right: 8px;
     transition: transform 0.3s ease;
+    font-size: 1.2rem; /* Adjust the size as needed */
 }
 
 .faq-item details[open] summary::before {
-    transform: rotate(90deg);
+    transform: rotate(90deg); /* Rotate the triangle when open */
 }
 
 /* Optional: Responsive design adjustments */
