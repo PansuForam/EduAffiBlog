@@ -471,47 +471,78 @@ header {
     }
 }
 
-/* Testimonials Section */
+/* General styling for the testimonials section */
 .testimonials {
-    background-color: #f9f9f9; /* Light Grey Background */
-    padding: 40px 0;
-    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: #003d79; /* Deep Blue */
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
 }
 
-.testimonials .testimonial {
-    background-color: #ffffff; /* White Background for Testimonials */
-    border: 1px solid #cccccc;
+/* Container for the testimonials */
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual testimonial styling */
+.testimonial {
+    background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px auto;
-    max-width: 600px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonials .testimonial:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.testimonials .testimonial p {
+.testimonial blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin: 0 0 10px;
+}
+
+.testimonial figcaption {
     font-size: 1rem;
-    color: #333333;
+    color: #888;
 }
 
-.testimonials .testimonial .author {
-    font-weight: bold;
-    margin-top: 10px;
-    color: #007bff; /* Primary Color */
+/* Optional: Responsive design adjustments */
+@media (min-width: 600px) {
+    .testimonial-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .testimonial {
+        flex: 1 1 calc(33.333% - 20px);
+    }
 }
 
-/* General styling for the FAQ section */
+@media (max-width: 600px) {
+    .testimonial {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+/**FAQs section**/
 .faq {
     max-width: 800px;
     margin: 0 auto;
