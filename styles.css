@@ -511,6 +511,97 @@ header {
     color: #007bff; /* Primary Color */
 }
 
+/* General styling for the FAQ section */
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for each FAQ item */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-item details[open] {
+    background-color: #e0f7fa;
+    border-color: #4db6ac;
+}
+
+.faq-item summary {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 6px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item summary:hover {
+    background-color: #ddd;
+}
+
+.faq-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Accessibility improvements */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Optional: Responsive design adjustments */
+@media (max-width: 600px) {
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-item details {
+        padding: 10px;
+    }
+
+    .faq-item summary {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+
 /* Footer */
 footer {
     background-color: #003d79; /* Deep Blue */
