@@ -21,7 +21,7 @@ a {
 article {
     background: #fff;
     padding: 20px;
-    max-width: 800px;
+    max-width: 700px; /* Reduced width for smaller images */
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,14 +39,14 @@ article {
 /* Image Styles */
 figure {
     margin: 0;
-    margin-left: 20px;
+    margin-left: 15px; /* Reduced margin for better alignment */
     flex: 1;
 }
 
 figure img {
     width: 100%;
     height: auto;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 300px; /* Adjusted max-width for smaller images */
     border-radius: 4px;
 }
 
@@ -57,7 +57,7 @@ figure img {
 
 /* Captions */
 figcaption {
-    font-size: 0.9em;
+    font-size: 0.8em; /* Smaller font size for captions */
     color: #666;
 }
 
