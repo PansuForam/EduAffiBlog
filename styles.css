@@ -373,6 +373,53 @@ header {
     line-height: 1.5;
 }
 
+/* Blog Posts */
+.latest-blogs {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.latest-blogs h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.latest-blogs .blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.latest-blogs .blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.latest-blogs .blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.latest-blogs .blog-post p {
+    color: #666;
+}
+
+.latest-blogs .blog-post:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+
 /* Testimonials Section */
 .testimonials {
     background-color: #f9f9f9; /* Light Grey Background */
