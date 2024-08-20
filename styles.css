@@ -371,7 +371,6 @@ header {
 .hero-content p {
     font-size: 1.25rem;
     line-height: 1.5;
-    color: white;
 }
 
 /* Testimonials Section */
@@ -411,39 +410,12 @@ header {
 .testimonials .testimonial .author {
     font-weight: bold;
     margin-top: 10px;
-    color: #007bff; 
-}
-
-/* FAQ Styles */
-.faq-item summary {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 10px;
-    background-color: #007bff;
-    color: #ffffff;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.faq-item summary:hover {
-    background-color: #0056b3;
-}
-
-.faq-item details[open] summary {
-    background-color: #0056b3;
-}
-
-.faq-item details p {
-    padding: 10px;
-    background-color: #f7f7f7;
-    margin-top: 5px;
-    border-left: 3px solid #007bff;
+    color: #007bff; /* Primary Color */
 }
 
 /* Footer */
 footer {
-    background-color: #003d79;
+    background-color: #003d79; /* Deep Blue */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -451,7 +423,6 @@ footer {
 
 footer a {
     color: white;
-    
     text-decoration: none;
 }
 
