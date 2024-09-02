@@ -4,89 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Stories: How Our Readers Achieved Their Goals</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" media="screen">
-    <link rel="stylesheet" href="blog.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="blog-styles.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="nav-logo">
-                <div class="logo"></div>
-            </div>
-            <div class="blog-name">
-                <h1>EduAffiBlog</h1>
-                <P>Empowering Minds, Elevating Success</P>
-            </div>
-            
-            <div class="nav-search">
-                <select name="All" class="search-select">
-                <option value="">All</option>
-                <option value="How to ?">How to ?</option>
-                <option value="What is ?">What is ?</option>
-                <option value="Categories">Categories</option>
-                <option value="Resources & Tools">Resources & Tools</option>
-                <option value="Success Stories">Success Stories</option>
-                <option value="Case Studies">Case Studies</option>
-            </select>
-                <input placeholder="Search Blog" class="search-input">
-                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            </div>
-            <div class="language-switcher">
-                <select>
-                    <option value="en">EN</option>
-                    <option value="es">ES</option>
-                    <option value="fr">FR</option>
-                    <option value="guj">Gujarati</option>
-                    <option value="hin">Hindi</option>
-                </select>
-            </div>
-            
-            <div class="nav-signin">
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html" class="home">
+                    <img src="logo.webp" alt="Logo" class="logo"></a>
+                <div class="logo-text">EduAffiBlog</div>
             </div>
 
-        </div>
-        <div class="nav-panel">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></a></i><a href="index.html">Home</a></li>
-                    <li><a href="#">How to?</a></li>
-                    <li><a href="#">What is?</a></li>
-                    <li>
-                        <select name="Categories" class="Categories-list">
-                            <option value="All">All Categories</option>
-                            <option value="Education">Education</option>
-                            <option value="Marketing Trends">Marketing Trends</option>
-                            <option value="Content Creation">Content Creation</option>
-                            <option value="Digital Tools">Digital Tools</option>
-                            <option value="Success Stories">Success Stories</option>
-                            <option value="Case Studies">Case Studies</option>
-                            <option value="Guides">Guides</option>
-                            <option value="Trends">Trends</option>
-                        </select>
-                    </li>
-                    <li><a href="#">Success Stories</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <div class="searchbar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
 
-    <header class="hero">
-        <div class="hero-image" style="background-image: url('box8.jpg');">
-            <div class="header-content">
+            <!-- Menu Button for Small Screens -->
+            <div class="menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Notification, Bookmark, and User Icons -->
+            <div class="nav-icons">
+                <div class="nav-notification">
+                    <abbr title="Notifications"><i class="fa-solid fa-bell"></i></abbr>
+                </div>
+
+                <div class="nav-bookmark">
+                    <abbr title="Bookmarks"><i class="fa-solid fa-bookmark"></i></abbr>
+                </div>
+
+                <div class="nav-write">
+                    <abbr title="Write for us"><i class="fa-solid fa-feather"></i></abbr>
+                </div>
+
+                <div class="nav-user">
+                    <abbr title="User"><i class="fa-solid fa-user"></i></abbr>
+                </div>
+            </div>
+
+            <!-- Dropdown Menu for Small Screens -->
+            <div class="dropdown-menu">
+                <div class="menu-close">
+                    <i class="fa-solid fa-times"></i>
+                </div>
+
+                <div class="dropdown-content">
+                    <div class="nav-notification">
+                        <i class="fa-solid fa-bell"></i> Notifications
+                    </div>
+
+                    <div class="nav-bookmark">
+                        <i class="fa-solid fa-bookmark"></i> Bookmarks
+                    </div>
+
+                    <div class="nav-write">
+                        <i class="fa-solid fa-feather"></i> Write for us
+                    </div>
+
+                    <div class="nav-user">
+                        <i class="fa-solid fa-user"></i> Account
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
+    <!--Sticky Panel-->
+    <div class="sticky-panel">
+        <ul class="panel-options">
+            <li><a href="#"><i class="fas fa-microchip"></i> Science & Technology</a></li>
+            <li><a href="#"><i class="fa-solid fa-route"></i> Travel & Adventure</a></li>
+            <li><a href="#"><i class="fas fa-utensils"></i> Food & Cuisine</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> News & Current Affairs</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Career & Personal Development</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Skills & Education</a></li>
+            <li><a href="#"><i class="fas fa-heartbeat"></i> Health & Wellness</a></li>
+            <li><a href="#"><i class="fas fa-dollar-sign"></i> Finance & Investing</a></li>
+            <li><a href="#"><i class="fas fa-paint-brush"></i> Art & Culture</a></li>
+            <li><a href="#"><i class="fas fa-laptop"></i> Tech Reviews & Gadgets</a></li>
+            <li><a href="#"><i class="fas fa-leaf"></i> Environmental & Sustainability</a></li>
+        </ul>
+    </div>
+<!--Blog content-->
 <article>
     <h1>Success Stories: How Our Readers Achieved Their Goals</h1>
     <p>Our readers have embarked on inspiring journeys towards achieving their goals. In this post, we highlight several success stories, showcasing how they applied the knowledge and strategies shared on our blog to reach their milestones.</p>
@@ -159,7 +162,44 @@
 
 </article>
 
+ <!-- Comments Section -->
+<section class="comments-section">
+    <h3 class="comments-title">Comments</h3>
+
+    <!-- Example of a single comment -->
+    <div class="comment">
+        <p class="comment-author">John Doe</p>
+        <p class="comment-text">Great article! I especially enjoyed the section on understanding your audience. Thanks for sharing!</p>
+    </div>
+
+    <div class="comment">
+        <p class="comment-author">Jane Smith</p>
+        <p class="comment-text">Very informative. I found the tips on SEO optimization particularly useful.</p>
+    </div>
+
+    <!-- Comment Form -->
+    <div class="comment-form">
+        <h3 class="form-title">Leave a Comment</h3>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="comment" rows="4" placeholder="Your Comment" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2024 EduAffiBlog. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
-
 
