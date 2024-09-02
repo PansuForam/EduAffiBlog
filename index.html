@@ -7,6 +7,9 @@
     <title>EduAffiBlog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -161,11 +164,15 @@
     </div>
 </section>
     
-<!--Testimonials-->
+<!-- Testimonials -->
 <section class="testimonials">
     <h2>What Our Users Say</h2>
+
     <div class="testimonial-slider">
-        <button class="slider-button prev">&lt;</button>
+        <button class="slider-button prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </button>
+
         <div class="testimonial-container">
             <figure class="testimonial">
                 <blockquote>
@@ -209,43 +216,46 @@
                 <figcaption>- David Wilson</figcaption>
             </figure>
         </div>
-        <button class="slider-button next">&gt;</button>
+
+        <button class="slider-button next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </button>
     </div>
 </section>
 
+    <!-- FAQs -->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
 
-    <!--FAQs-->
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
+    <article class="faq-item">
+        <details>
+            <summary>What is EduAffiBlog?</summary>
+            <p>EduAffiBlog is a platform that provides insightful articles and updates on various educational topics. Our goal is to deliver high-quality, relevant content to help you stay informed and inspired in your learning journey.</p>
+        </details>
+    </article>
 
-        <article class="faq-item">
-            <details>
-                <summary>What is EduAffiBlog?</summary>
-                <p>EduAffiBlog is a platform that provides insightful articles and updates on various educational topics. Our goal is to deliver high-quality, relevant content to help you stay informed and inspired in your learning journey.</p>
-            </details>
-        </article>
+    <article class="faq-item">
+        <details>
+            <summary>How can I subscribe to the newsletter?</summary>
+            <p>You can subscribe by entering your email address in the subscription form located in the footer of our website. Once subscribed, you'll receive updates and articles directly in your inbox.</p>
+        </details>
+    </article>
 
-        <article class="faq-item">
-            <details>
-                <summary>How can I subscribe to the newsletter?</summary>
-                <p>You can subscribe by entering your email address in the subscription form located in the footer of our website. Once subscribed, you'll receive updates and articles directly in your inbox.</p>
-            </details>
-        </article>
+    <article class="faq-item">
+        <details>
+            <summary>How can I contact support?</summary>
+            <p>If you need assistance, you can reach out to our support team via the contact form on our website. We're here to help with any inquiries or issues you might have.</p>
+        </details>
+    </article>
 
-        <article class="faq-item">
-            <details>
-                <summary>How can I contact support?</summary>
-                <p>If you need assistance, you can reach out to our support team via the contact form on our website. We're here to help with any inquiries or issues you might have.</p>
-            </details>
-        </article>
+    <article class="faq-item">
+        <details>
+            <summary>Can I contribute an article?</summary>
+            <p>Yes, we're always looking for knowledgeable writers to contribute to our blog. If you're interested, please check the 'Write for us' section for submission guidelines and more information.</p>
+        </details>
+    </article>
+</section>
 
-        <article class="faq-item">
-            <details>
-                <summary>Can I contribute an article?</summary>
-                <p>Yes, we're always looking for knowledgeable writers to contribute to our blog. If you're interested, please check the 'Write for us' section for submission guidelines and more information.</p>
-            </details>
-        </article>
-    </section>
 
     <!--Footer-->
     <footer>
