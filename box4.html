@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Tools for Remote Work Success</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" media="screen">
-    <link rel="stylesheet" href="blog.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="blog-styles.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <div class="logo-container">
-                <img src="logo.webp" alt="Logo" class="logo">
+                <a href="index.html" class="home">
+                    <img src="logo.webp" alt="Logo" class="logo"></a>
                 <div class="logo-text">EduAffiBlog</div>
             </div>
 
@@ -30,7 +31,7 @@
             <div class="nav-icons">
                 <div class="nav-notification">
                     <abbr title="Notifications"><i class="fa-solid fa-bell"></i></abbr>
-                </div>      
+                </div>
 
                 <div class="nav-bookmark">
                     <abbr title="Bookmarks"><i class="fa-solid fa-bookmark"></i></abbr>
@@ -44,58 +45,51 @@
                     <abbr title="User"><i class="fa-solid fa-user"></i></abbr>
                 </div>
             </div>
-        
 
-        <!-- Dropdown Menu for Small Screens -->
-        <div class="dropdown-menu">
-            <div class="menu-close">
-                <i class="fa-solid fa-times"></i>
-            </div>
-
-            <div class="dropdown-content">
-                <div class="nav-notification">
-                    <i class="fa-solid fa-bell"></i>    Notificationa
-                </div>      
-
-                <div class="nav-bookmark">
-                    <i class="fa-solid fa-bookmark"></i>    Bookmarks
-                </div>
-                
-                <div class="nav-write">
-                    <i class="fa-solid fa-feather"></i>    Write for us
+            <!-- Dropdown Menu for Small Screens -->
+            <div class="dropdown-menu">
+                <div class="menu-close">
+                    <i class="fa-solid fa-times"></i>
                 </div>
 
-                <div class="nav-user">
-                    <i class="fa-solid fa-user"></i>    Account
+                <div class="dropdown-content">
+                    <div class="nav-notification">
+                        <i class="fa-solid fa-bell"></i> Notifications
+                    </div>
+
+                    <div class="nav-bookmark">
+                        <i class="fa-solid fa-bookmark"></i> Bookmarks
+                    </div>
+
+                    <div class="nav-write">
+                        <i class="fa-solid fa-feather"></i> Write for us
+                    </div>
+
+                    <div class="nav-user">
+                        <i class="fa-solid fa-user"></i> Account
+                    </div>
                 </div>
-            </div>
-        </div>
-        </div>
-        </header>
-
-    <!--Sticky Panel-->
-  <div class="sticky-panel">
-    <ul class="panel-options">
-        <li><a href="#"><i class="fas fa-microchip"></i> Science & Technology</a></li>
-        <li><a href="#"><i class="fas fa-plane"></i> Travel & Adventure</a></li>
-        <li><a href="#"><i class="fas fa-utensils"></i> Food & Cuisine</a></li>
-        <li><a href="#"><i class="fas fa-newspaper"></i> News & Current Affairs</a></li>
-        <li><a href="#"><i class="fas fa-briefcase"></i> Career & Personal Development</a></li>
-        <li><a href="#"><i class="fas fa-graduation-cap"></i> Skills & Education</a></li>
-        <li><a href="#"><i class="fas fa-heartbeat"></i> Health & Wellness</a></li>
-        <li><a href="#"><i class="fas fa-dollar-sign"></i> Finance & Investing</a></li>
-        <li><a href="#"><i class="fas fa-paint-brush"></i> Art & Culture</a></li>
-        <li><a href="#"><i class="fas fa-laptop"></i> Tech Reviews & Gadgets</a></li>
-        <li><a href="#"><i class="fas fa-leaf"></i> Environmental & Sustainability</a></li>
-    </ul>
-</div>
-
-    <header class="hero">
-        <div class="hero-image" style="background-image: url('box6.jpg');">
-            <div class="header-content">
             </div>
         </div>
     </header>
+
+    <!--Sticky Panel-->
+    <div class="sticky-panel">
+        <ul class="panel-options">
+            <li><a href="#"><i class="fas fa-microchip"></i> Science & Technology</a></li>
+            <li><a href="#"><i class="fa-solid fa-route"></i> Travel & Adventure</a></li>
+            <li><a href="#"><i class="fas fa-utensils"></i> Food & Cuisine</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> News & Current Affairs</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Career & Personal Development</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Skills & Education</a></li>
+            <li><a href="#"><i class="fas fa-heartbeat"></i> Health & Wellness</a></li>
+            <li><a href="#"><i class="fas fa-dollar-sign"></i> Finance & Investing</a></li>
+            <li><a href="#"><i class="fas fa-paint-brush"></i> Art & Culture</a></li>
+            <li><a href="#"><i class="fas fa-laptop"></i> Tech Reviews & Gadgets</a></li>
+            <li><a href="#"><i class="fas fa-leaf"></i> Environmental & Sustainability</a></li>
+        </ul>
+    </div>
+<!--Blog content-->
 <article>
     <h1>Top Tools for Remote Work Success</h1>
     <p>As remote work continues to be the norm for many professionals, having the right tools is crucial for staying productive and connected. Here are some of the top tools that can help you achieve success in a remote work environment.</p>
@@ -179,6 +173,42 @@
 
 </article>
 
+ <!-- Comments Section -->
+<section class="comments-section">
+    <h3 class="comments-title">Comments</h3>
+
+    <!-- Example of a single comment -->
+    <div class="comment">
+        <p class="comment-author">John Doe</p>
+        <p class="comment-text">Great article! I especially enjoyed the section on understanding your audience. Thanks for sharing!</p>
+    </div>
+
+    <div class="comment">
+        <p class="comment-author">Jane Smith</p>
+        <p class="comment-text">Very informative. I found the tips on SEO optimization particularly useful.</p>
+    </div>
+
+    <!-- Comment Form -->
+    <div class="comment-form">
+        <h3 class="form-title">Leave a Comment</h3>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="comment" rows="4" placeholder="Your Comment" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2024 EduAffiBlog. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
