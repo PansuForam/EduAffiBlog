@@ -3,43 +3,57 @@ let currentIndex = 0;
 const testimonials = document.querySelectorAll('.testimonial');
 const totalTestimonials = testimonials.length;
 
+// Update the slider position
 function updateSlider() {
     testimonialContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Handle swipe on small screens
+// Touch event variables
 let startX = 0;
 let endX = 0;
 
+// Detect touch start
 testimonialContainer.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
 });
 
+// Detect touch movement
 testimonialContainer.addEventListener('touchmove', (e) => {
     endX = e.touches[0].clientX;
 });
 
+// Detect touch end and calculate swipe direction
 testimonialContainer.addEventListener('touchend', () => {
     if (startX > endX + 50) {
-        currentIndex = (currentIndex + 1) % totalTestimonials; // Swipe left
+        // Swipe left
+        if (currentIndex < totalTestimonials - 1) {
+            currentIndex++;
+        }
     } else if (startX < endX - 50) {
-        currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials; // Swipe right
+        // Swipe right
+        if (currentIndex > 0) {
+            currentIndex--;
+        }
     }
-    updateSlider();
+    updateSlider(); // Update the slider after swiping
 });
 
-// Optional: Keep the previous button functionality on large screens
+// Optional: Keep buttons working on larger screens
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 if (prevButton && nextButton) {
     nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % totalTestimonials;
+        if (currentIndex < totalTestimonials - 1) {
+            currentIndex++;
+        }
         updateSlider();
     });
 
     prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+        if (currentIndex > 0) {
+            currentIndex--;
+        }
         updateSlider();
     });
 }
