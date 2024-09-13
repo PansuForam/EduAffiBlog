@@ -527,7 +527,7 @@ header {
 }
 
 .testimonial {
-    min-width: 90%;
+    min-width: 100%;
     padding: 20px;
 }
 
@@ -544,6 +544,7 @@ figcaption {
     color: #003366;
 }
 
+/* Slider buttons hidden on small screens */
 .slider-button {
     background: none;
     border: none;
@@ -564,26 +565,9 @@ figcaption {
     right: 0;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .testimonials h2 {
-        font-size: 2em;
-    }
-
-    .testimonial {
-        padding: 15px;
-    }
-
-    blockquote {
-        font-size: 1.1em;
-    }
-
-    figcaption {
-        font-size: 0.9em;
-    }
-
     .slider-button {
-        font-size: 1.5em;
+        display: none; /* Hide buttons on small screens */
     }
 }
 
@@ -606,10 +590,6 @@ figcaption {
 
     figcaption {
         font-size: 0.8em;
-    }
-
-    .slider-button {
-        font-size: 1.2em;
     }
 }
 
