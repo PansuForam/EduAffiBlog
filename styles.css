@@ -567,7 +567,7 @@ figcaption {
 
 @media (max-width: 768px) {
     .slider-button {
-        display: none; /* Hide buttons on small screens */
+        display: none; 
     }
 }
 
