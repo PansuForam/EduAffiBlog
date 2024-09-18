@@ -595,6 +595,7 @@ figcaption {
 }
 
 /* FAQs section */
+/* FAQs section */
 .faq {
     max-width: 900px;
     margin: 0 auto;
@@ -666,7 +667,7 @@ figcaption {
     transform: rotate(180deg);
 }
 
-/* Optional: Responsive design adjustments */
+/* Responsive design adjustments */
 @media (max-width: 600px) {
     .faq {
         padding: 15px;
@@ -683,6 +684,44 @@ figcaption {
     .faq-item summary {
         font-size: 1rem;
         padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq {
+        padding: 10px;
+    }
+
+    .faq h2 {
+        font-size: 1.4rem;
+    }
+
+    .faq-item details {
+        padding: 6px;
+    }
+
+    .faq-item summary {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 360px) {
+    .faq {
+        padding: 8px;
+    }
+
+    .faq h2 {
+        font-size: 1.2rem;
+    }
+
+    .faq-item details {
+        padding: 4px;
+    }
+
+    .faq-item summary {
+        font-size: 0.8rem;
+        padding: 4px;
     }
 }
 
