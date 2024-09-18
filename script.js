@@ -1,3 +1,43 @@
+// Select elements
+const menuButton = document.querySelector('.menu-button');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const closeButton = document.querySelector('.menu-close');
+
+// Function to open the dropdown menu
+function openMenu() {
+    dropdownMenu.classList.add('show');
+    dropdownMenu.classList.remove('hide');
+}
+
+// Function to close the dropdown menu
+function closeMenu() {
+    dropdownMenu.classList.add('hide');
+    dropdownMenu.classList.remove('show');
+
+    // Wait for the animation to finish before hiding it completely
+    setTimeout(() => {
+        dropdownMenu.style.display = 'none';
+    }, 300); // Match this duration with the CSS transition duration
+}
+
+// Event listeners
+menuButton.addEventListener('click', () => {
+    dropdownMenu.style.display = 'block'; // Show the menu first
+    openMenu(); // Then apply the show class for animation
+});
+
+closeButton.addEventListener('click', () => {
+    closeMenu();
+});
+
+// Optional: Close the menu when clicking outside of it
+document.addEventListener('click', (e) => {
+    if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        closeMenu();
+    }
+});
+
+//testimonials
 const testimonialContainer = document.querySelector('.testimonial-container');
 let currentIndex = 0;
 const testimonials = document.querySelectorAll('.testimonial');
