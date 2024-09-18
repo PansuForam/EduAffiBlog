@@ -57,3 +57,19 @@ if (prevButton && nextButton) {
         updateSlider();
     });
 }
+
+// Hide testimonials on small screens
+function handleResize() {
+    if (window.innerWidth < 768) {
+        testimonialContainer.style.display = 'none'; // Hide on small screens
+    } else {
+        testimonialContainer.style.display = ''; // Show on larger screens
+    }
+}
+
+// Initial check
+handleResize();
+
+// Check on window resize
+window.addEventListener('resize', handleResize);
+
