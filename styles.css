@@ -412,7 +412,8 @@ header {
 /* Latest Blogs Section */
 .latest-blogs {
     padding: 50px 20px;
-    background-color: #DFDBE5;text-align: center;
+    background-color: #f5b7b1;
+    text-align: center;
 }
 
 .latest-blogs h2 {
