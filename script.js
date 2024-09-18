@@ -113,3 +113,51 @@ handleResize();
 // Check on window resize
 window.addEventListener('resize', handleResize);
 
+
+document.getElementById('newsletter-form').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const emailInput = document.getElementById('email');
+    const email = emailInput.value.trim();
+    const confirmationMessage = document.getElementById('confirmation-message');
+    const errorMessage = document.getElementById('error-message');
+
+    // Reset messages
+    confirmationMessage.classList.add('hidden');
+    errorMessage.classList.add('hidden');
+
+    // Validate email
+    if (!validateEmail(email)) {
+        errorMessage.textContent = 'Please enter a valid email address.';
+        errorMessage.classList.remove('hidden');
+        return;
+    }
+
+    try {
+        // Mock API call
+        await mockApiCall(email);
+        confirmationMessage.textContent = `Thank you for subscribing with ${email}!`;
+        confirmationMessage.classList.remove('hidden');
+        emailInput.value = ''; // Clear the input field
+    } catch (error) {
+        errorMessage.textContent = 'Subscription failed. Please try again later.';
+        errorMessage.classList.remove('hidden');
+    }
+});
+
+// Email validation function
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+// Mock API call function
+function mockApiCall(email) {
+    return new Promise((resolve, reject) => {
+        // Simulate network delay
+        setTimeout(() => {
+            const isSuccess = Math.random() > 0.2; // 80% success rate
+            isSuccess ? resolve() : reject();
+        }, 1000);
+    });
+}
